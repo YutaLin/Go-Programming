@@ -19,4 +19,12 @@ func main() {
 	default:
 		fmt.Println("this is default")
 	}
+
+	// Missing statement will be true
+	switch {
+	case true:
+		fmt.Println("ture")
+	case false:
+		fmt.Println("false")
+	}
 }
