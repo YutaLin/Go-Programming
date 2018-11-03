@@ -21,4 +21,9 @@ func main() {
 	if !false {
 		fmt.Println("004")
 	}
+
+	// Initailization statement
+	if x := 42; x == 42 {
+		fmt.Println("001")
+	}
 }
