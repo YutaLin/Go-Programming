@@ -26,4 +26,12 @@ func main() {
 	if x := 42; x == 42 {
 		fmt.Println("001")
 	}
+
+	// If Else statement
+	y := 42
+	if y == 42 {
+		fmt.Println("x is 42")
+	} else {
+		fmt.Println("x is not 42")
+	}
 }
