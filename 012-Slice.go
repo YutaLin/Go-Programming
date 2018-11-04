@@ -24,8 +24,21 @@ func main() {
 	printSlice(e)
 	// e == []byte{'a', 'm'}
 	// d == []byte{'r', 'o', 'a', 'm'}
+
+	// Append element to Slice
+	mySlice := make([]int, 0, 5)
+	fmt.Println("-----------------")
+	fmt.Println(mySlice)
+	fmt.Println(len(mySlice))
+	fmt.Println(cap(mySlice))
+	fmt.Println("-----------------")
+
+	for i := 0; i < 80; i++ {
+		mySlice = append(mySlice, i)
+		fmt.Printf("Len:%d Cap:%d Value:%d\n", len(mySlice), cap(mySlice), mySlice[i])
+	}
 }
 
 func printSlice(s []byte) {
-	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+	fmt.Printf("len=%d cap=%d %v", len(s), cap(s), s)
 }
