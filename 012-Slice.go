@@ -9,6 +9,7 @@ func main() {
 	x := []int{4, 5, 7, 8, 42}
 	fmt.Println(x)
 
+	// For loop
 	for index, value := range x {
 		println(index, value)
 	}
