@@ -37,8 +37,34 @@ func main() {
 		mySlice = append(mySlice, i)
 		fmt.Printf("Len:%d Cap:%d Value:%d\n", len(mySlice), cap(mySlice), mySlice[i])
 	}
+
+	// Initailization way 2
+	initailizaition_way_2()
 }
 
 func printSlice(s []byte) {
 	fmt.Printf("len=%d cap=%d %v", len(s), cap(s), s)
+}
+
+// Slice Initailizaition Way 2
+
+func initailizaition_way_2() {
+
+	greeting := []string{
+		"Good morning!",
+		"Bonjour!",
+		"dias!",
+		"Bongiorno!",
+		"Ohayo!",
+		"Selamat pagi!",
+		"Gutten morgen!",
+	}
+
+	for i, currentEntry := range greeting {
+		fmt.Println(i, currentEntry)
+	}
+
+	for j := 0; j < len(greeting); j++ {
+		fmt.Println(greeting[j])
+	}
 }
